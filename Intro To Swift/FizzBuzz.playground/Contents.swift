@@ -39,3 +39,4 @@ for num in 1...100{
         print(num)
     }
 }
+//output is like the above 
