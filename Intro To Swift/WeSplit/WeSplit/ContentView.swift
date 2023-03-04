@@ -4,7 +4,7 @@
 //
 //  Created by Andres Pulgarin on 3/3/23.
 //
-// Complete pt.2
+// Completed pt2
 //Note: $ read and write other wise it just reads
 
 import SwiftUI
