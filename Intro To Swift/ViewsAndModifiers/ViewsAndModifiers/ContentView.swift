@@ -24,6 +24,8 @@ struct ContentView: View {
     
     @State private var useTitle = true
     let motto2 = Text("huh")
+    let agents = ["Andres", "Jade" , "Andrea", "Jenny"]
+    
     
     var body: some View {
         VStack{
@@ -31,6 +33,10 @@ struct ContentView: View {
             motto2.modifier(Title())
             Text("Test")
                 .modifier(Title())
+            ForEach(agents, id: \.self){
+                Text($0).modifier(Title())
+            }
+            
            
         }
     }
