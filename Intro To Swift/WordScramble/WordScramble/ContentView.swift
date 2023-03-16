@@ -38,7 +38,7 @@ struct ContentView: View {
             .alert(errorTitle, isPresented: $showingError){
                 Button("OK", role: .cancel) { }
             } message: {
-                Text("Error Message")
+                Text("Error")
             }
         }
     }
