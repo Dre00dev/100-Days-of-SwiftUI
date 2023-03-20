@@ -35,7 +35,7 @@ struct ContentView: View {
             if isShowingRed {
                 Rectangle()
                     .fill(.red)
-                    .frame(width: 200,height: 200)
+                    .frame(width: 200,height: 230)
                     .transition(.pivot)
             }
         }
