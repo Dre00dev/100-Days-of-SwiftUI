@@ -154,6 +154,11 @@
 		"name": "Ronald E. Evans",
 		"description": "Ronald Ellwin Evans Jr. (November 10, 1933 – April 7, 1990), (Capt, USN), was an American naval officer and aviator, electrical engineer, aeronautical engineer, NASA astronaut, and one of 24 people to have flown to the Moon.\n\nEvans was selected as an astronaut by NASA as part of Astronaut Group 5 in 1966 and made his only flight into space as Command Module Pilot aboard Apollo 17 in December, 1972, the last crewed mission to the Moon, with Commander Eugene Cernan and Lunar Module Pilot Harrison Schmitt.\n\nDuring the flight, he and five mice orbited the Moon a record 75 times as his two crewmates descended to the surface. Consequently, he is the last person to orbit the Moon alone and holds the record for the most time spent in lunar orbit at 148 hours. In 1975 Evans served as backup Command Module Pilot for the Apollo-Soyuz Test Project mission."
 	},
+    "andres": {
+        "id": "andres",
+        "name": "Andres Pulgarin",
+        "description": "Ronald Ellwin Evans Jr. (November 10, 1933 – April 7, 1990), (Capt, USN), was an American naval officer and aviator, electrical engineer, aeronautical engineer, NASA astronaut, and one of 24 people to have flown to the Moon.\n\nEvans was selected as an astronaut by NASA as part of Astronaut Group 5 in 1966 and made his only flight into space as Command Module Pilot aboard Apollo 17 in December, 1972, the last crewed mission to the Moon, with Commander Eugene Cernan and Lunar Module Pilot Harrison Schmitt.\n\nDuring the flight, he and five mice orbited the Moon a record 75 times as his two crewmates descended to the surface. Consequently, he is the last person to orbit the Moon alone and holds the record for the most time spent in lunar orbit at 148 hours. In 1975 Evans served as backup Command Module Pilot for the Apollo-Soyuz Test Project mission."
+    },
     "schmitt": {
         "id": "schmitt",
 		"name": "Harrison H. Schmitt",
