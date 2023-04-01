@@ -45,6 +45,13 @@ struct Checkerboard: Shape {
     }
 }
 
+struct Arrow: Shape{
+    
+    func path(in rect: CGRect) -> Path {
+        <#code#>
+    }
+    
+}
 struct ContentView: View {
     @State private var rows = 4
     @State private var columns = 4
