@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+Struct Trapezoid: Shape {
+    
+}
 
 struct ContentView: View {
     
