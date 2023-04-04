@@ -19,7 +19,7 @@ struct ContentView: View {
             } else if phase.error != nil{
                 Text("There was an error loading the image")
             } else {
-                ProgressView()
+                ProgressView() //stuff
             }
         }
     }
