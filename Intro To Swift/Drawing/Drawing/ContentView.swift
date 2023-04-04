@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct Trapezoid: Shape {
+    
+}
+
 struct Checkerboard: Shape {
     var rows: Int
     var columns: Int
