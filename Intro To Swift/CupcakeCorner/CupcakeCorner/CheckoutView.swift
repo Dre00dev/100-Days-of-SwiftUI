@@ -59,6 +59,7 @@ struct CheckoutView: View {
         } catch {
             print("Checkout failed")
         }
+        //day 51 commit fix
     }
 }
 
