@@ -60,6 +60,7 @@ struct CheckoutView: View {
             print("Checkout failed")
         }
         //day 51 commit fix
+        //day 52 commit fix
     }
 }
 
