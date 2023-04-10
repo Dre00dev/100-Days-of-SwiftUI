@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB0B086C29FD40EC00AC6F6C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B086B29FD40EC00AC6F6C /* RatingView.swift */; };
 		FB0B086E29FD50C200AC6F6C /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B086D29FD50C200AC6F6C /* EmojiRatingView.swift */; };
+		FB0B087029FD56FB00AC6F6C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B086F29FD56FB00AC6F6C /* DetailView.swift */; };
 		FB3793ED29F855810080E998 /* BookWormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3793EC29F855810080E998 /* BookWormApp.swift */; };
 		FB3793EF29F855810080E998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3793EE29F855810080E998 /* ContentView.swift */; };
 		FB3793F129F855830080E998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3793F029F855830080E998 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		FB0B086B29FD40EC00AC6F6C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		FB0B086D29FD50C200AC6F6C /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		FB0B086F29FD56FB00AC6F6C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FB3793E929F855810080E998 /* BookWorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookWorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3793EC29F855810080E998 /* BookWormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWormApp.swift; sourceTree = "<group>"; };
 		FB3793EE29F855810080E998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				FB3793EE29F855810080E998 /* ContentView.swift */,
 				FB0B086D29FD50C200AC6F6C /* EmojiRatingView.swift */,
 				FB0B086B29FD40EC00AC6F6C /* RatingView.swift */,
+				FB0B086F29FD56FB00AC6F6C /* DetailView.swift */,
 				FB3793F029F855830080E998 /* Assets.xcassets */,
 				FB3793F229F855830080E998 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3793EF29F855810080E998 /* ContentView.swift in Sources */,
+				FB0B087029FD56FB00AC6F6C /* DetailView.swift in Sources */,
 				FB37940729F99E770080E998 /* Bookworm.xcdatamodeld in Sources */,
 				FB0B086E29FD50C200AC6F6C /* EmojiRatingView.swift in Sources */,
 				FB3793FE29F993C70080E998 /* DataController.swift in Sources */,
