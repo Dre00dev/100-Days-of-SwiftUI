@@ -12,13 +12,20 @@ struct DetailView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     @State private var showingDeleteAlert = false
+    var dateFormatter: DateFormatter {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .short
+            return formatter
+        }
     var body: some View {
         ScrollView{
-            ZStack(alignment: .bottomTrailing){
+            ZStack(alignment: .bottomLeading){
                 Image(book.genre ?? "Fantasy")
                     .resizable()
                     .scaledToFit()
                 
+                HStack{
                 Text(book.genre?.uppercased() ?? "FANTASY")
                     .font(.caption)
                     .fontWeight(.black)
@@ -26,7 +33,20 @@ struct DetailView: View {
                     .foregroundColor(.white)
                     .background(.black.opacity(0.75))
                     .clipShape(Capsule())
-                    .offset(x: -5, y: -5)
+                    .offset(x: 5, y: -5)
+                
+                    if let date = book.date {
+                        Spacer()
+                        Text("Added: \(date, formatter: dateFormatter)" )
+                            .font(.caption)
+                            .fontWeight(.black)
+                            .padding(8)
+                            .foregroundColor(.white)
+                            .background(.black.opacity(0.75))
+                            .clipShape(Capsule())
+                            .offset(x: 5, y: -5)
+                    }
+                }
             }
             Text(book.author ?? "Unknown Author")
                 .font(.title)
