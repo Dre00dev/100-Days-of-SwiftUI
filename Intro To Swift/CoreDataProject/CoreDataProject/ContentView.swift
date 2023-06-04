@@ -29,7 +29,7 @@ struct ContentView: View {
                 candy1.origin?.fullName = "United Kingdom"
                 let candy2 = "KitKat"
                 candy2.origin = Country(context:moc)
-                candy2.origin?.shortName = "UK"
+                candy2.origin?.shortName = "USA"
                 candy2.origin?.fullName = "United Kingdom"
                 let candy3 = "Twix"
                 candy3.origin = Country(context:moc)
