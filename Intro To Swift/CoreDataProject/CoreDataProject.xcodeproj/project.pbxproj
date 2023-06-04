@@ -11,8 +11,13 @@
 		FB0B08802A00501900AC6F6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B087F2A00501900AC6F6C /* ContentView.swift */; };
 		FB0B08822A00501D00AC6F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0B08812A00501D00AC6F6C /* Assets.xcassets */; };
 		FB0B08852A00501D00AC6F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0B08842A00501D00AC6F6C /* Preview Assets.xcassets */; };
-		FB0B088C2A0050BC00AC6F6C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B088B2A0050BC00AC6F6C /* DataController.swift */; };
 		FB0B088F2A00526F00AC6F6C /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB0B088D2A00526F00AC6F6C /* CoreDataProject.xcdatamodeld */; };
+		FBEC86AD2A2C5D2000795E88 /* filteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86AC2A2C5D2000795E88 /* filteredList.swift */; };
+		FBEC86B22A2C647300795E88 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86AE2A2C647300795E88 /* Candy+CoreDataClass.swift */; };
+		FBEC86B32A2C647300795E88 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86AF2A2C647300795E88 /* Candy+CoreDataProperties.swift */; };
+		FBEC86B42A2C647300795E88 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86B02A2C647300795E88 /* Country+CoreDataClass.swift */; };
+		FBEC86B52A2C647300795E88 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86B12A2C647300795E88 /* Country+CoreDataProperties.swift */; };
+		FBEC86B72A2C67BB00795E88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC86B62A2C67BB00795E88 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +26,13 @@
 		FB0B087F2A00501900AC6F6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB0B08812A00501D00AC6F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB0B08842A00501D00AC6F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB0B088B2A0050BC00AC6F6C /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		FB0B088E2A00526F00AC6F6C /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		FBEC86AC2A2C5D2000795E88 /* filteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filteredList.swift; sourceTree = "<group>"; };
+		FBEC86AE2A2C647300795E88 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FBEC86AF2A2C647300795E88 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FBEC86B02A2C647300795E88 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FBEC86B12A2C647300795E88 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FBEC86B62A2C67BB00795E88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +65,15 @@
 		FB0B087C2A00501900AC6F6C /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				FB0B088B2A0050BC00AC6F6C /* DataController.swift */,
+				FBEC86AE2A2C647300795E88 /* Candy+CoreDataClass.swift */,
+				FBEC86B62A2C67BB00795E88 /* DataController.swift */,
+				FBEC86AF2A2C647300795E88 /* Candy+CoreDataProperties.swift */,
+				FBEC86B02A2C647300795E88 /* Country+CoreDataClass.swift */,
+				FBEC86B12A2C647300795E88 /* Country+CoreDataProperties.swift */,
 				FB0B088D2A00526F00AC6F6C /* CoreDataProject.xcdatamodeld */,
 				FB0B087D2A00501900AC6F6C /* CoreDataProjectApp.swift */,
 				FB0B087F2A00501900AC6F6C /* ContentView.swift */,
+				FBEC86AC2A2C5D2000795E88 /* filteredList.swift */,
 				FB0B08812A00501D00AC6F6C /* Assets.xcassets */,
 				FB0B08832A00501D00AC6F6C /* Preview Content */,
 			);
@@ -144,7 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0B08802A00501900AC6F6C /* ContentView.swift in Sources */,
-				FB0B088C2A0050BC00AC6F6C /* DataController.swift in Sources */,
+				FBEC86B22A2C647300795E88 /* Candy+CoreDataClass.swift in Sources */,
+				FBEC86AD2A2C5D2000795E88 /* filteredList.swift in Sources */,
+				FBEC86B32A2C647300795E88 /* Candy+CoreDataProperties.swift in Sources */,
+				FBEC86B72A2C67BB00795E88 /* DataController.swift in Sources */,
+				FBEC86B52A2C647300795E88 /* Country+CoreDataProperties.swift in Sources */,
+				FBEC86B42A2C647300795E88 /* Country+CoreDataClass.swift in Sources */,
 				FB0B088F2A00526F00AC6F6C /* CoreDataProject.xcdatamodeld in Sources */,
 				FB0B087E2A00501900AC6F6C /* CoreDataProjectApp.swift in Sources */,
 			);

@@ -1,20 +1,20 @@
 //
 //  DataController.swift
-//  BookWorm
+//  CoreDataProject
 //
-//  Created by Andres Pulgarin on 4/26/23.
+//  Created by Andres Pulgarin on 6/4/23.
 //
 
-import CoreData  //documents directory
 import Foundation
+import CoreData
 
-class DataController: ObservableObject {
+class DataController : ObservableObject {
     let container = NSPersistentContainer(name: "CoreDataProject")
     
-    init() {
-        container.loadPersistentStores { description, error in
+    init(){
+        container.loadPersistentStores{ description, error in
             if let error = error {
-                print("Core Data failed to load: \(error.localizedDescription)")
+                print("Core Data failed to load rip: \(error.localizedDescription)")
                 return
             }
             
