@@ -8,42 +8,63 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var users = [User]()
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var users: FetchedResults<CachedUser>
+    @State private var loadedUsers = [User]()
     var body: some View {
         NavigationView{
-            List(users){ user in
+            List(loadedUsers){ user in
                 Text("\(user.name)")
             }
-            .onAppear(perform: loadUserData)
+        }
+        .task{
+            await loadUserData()
         }
     }
-    func loadUserData() {
-        if users.isEmpty{
+    func loadUserData() async{
+        if loadedUsers.isEmpty{
             guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else{
                 print("Invalid URL")
                 return
             }
-            
-            let request = URLRequest(url: url)
-            
-            URLSession.shared.dataTask(with: request) { data, response, error in
-                guard let userData = data
-                else {
-                    print("No data in response \(error?.localizedDescription ?? "Unknown Error")")
-                    return
-                }
-                let decoder = JSONDecoder()
+            do {
+                let (data, _) = try await URLSession.shared.data(from: url)
                 
+                let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 
-                do{
-                    users = try decoder.decode([User].self, from: userData)
-                    return
-                } catch {
-                    print("Decoding Failed: \(error)")
+                if let decodedResponse = try? decoder.decode([User].self, from: data) {
+                    await MainActor.run{
+                        loadedUsers = decodedResponse
+                        writeDataToCoreData(users: loadedUsers)
+                    }
                 }
-                print("Fetch Failed:  \(error?.localizedDescription ?? "Unknown Error")")
+            } catch {
+                print("Invalid data")
             }
+            
+        }
+    }
+    func writeDataToCoreData(users: [User]) {
+        for user in users {
+            let mocUser = CachedUser(context: moc)
+            mocUser.id = user.id
+            mocUser.isActive = user.isActive
+            mocUser.name = user.name
+            mocUser.age = Int16(user.age)
+            mocUser.company = user.company
+            
+            for friend in user.friends {
+                let newFriend = CachedFriend(context: moc)
+                newFriend.id = friend.id
+                newFriend.name = friend.name
+                
+                mocUser.addToFriends(newFriend)
+            }
+        }
+        
+        if moc.hasChanges {
+            try? moc.save()
         }
     }
 }

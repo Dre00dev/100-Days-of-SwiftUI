@@ -65,8 +65,8 @@
 		FB0B087C2A00501900AC6F6C /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				FBEC86AE2A2C647300795E88 /* Candy+CoreDataClass.swift */,
 				FBEC86B62A2C67BB00795E88 /* DataController.swift */,
+				FBEC86AE2A2C647300795E88 /* Candy+CoreDataClass.swift */,
 				FBEC86AF2A2C647300795E88 /* Candy+CoreDataProperties.swift */,
 				FBEC86B02A2C647300795E88 /* Country+CoreDataClass.swift */,
 				FBEC86B12A2C647300795E88 /* Country+CoreDataProperties.swift */,
